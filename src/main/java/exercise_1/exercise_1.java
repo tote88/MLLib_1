@@ -133,7 +133,7 @@ public class exercise_1 {
 		final Broadcast<HashMap<String, Integer>> bc = jsc.broadcast(labels);
 
 		// Leemos sobre un dataset todos los ficheros de train 
-		Dataset<Row> eMails = readMailFiles(ss, jsc, "src\\main\\resources\\1_TR_all");
+		Dataset<Row> eMails = readMailFiles(ss, jsc, "src\\main\\resources\\1_TR");
 	 	
 		// Definimos una UDF (User Defined Function) para obtener el label en el 
 		// hashmap a partir del nombre del fichero
